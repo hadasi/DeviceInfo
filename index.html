@@ -1,11 +1,17 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+﻿<!doctype html>
 
-<html>
+<html lang="ja">
 <head>
- <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+ <meta charset=UTF-8">
+ <meta http-equiv="Content-Style-Type" content="text/css">
+ <!-- 外部スクリプト -->
+ <!--script type="text/javascript" src="js/zepto.min.js"></script>
+ <script type="text/javascript" src="js/simple.js"></script-->
+ <script type="text/javascript" src="phonegap.js"></script>
+ <!--script type="text/javascript" src="Script/menu01.js"></script-->
 <title>DeviceInfo</title>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
 
 	// PhoneGapの読み込み完了とともにonDeviceReadyを呼び出します。
 	//
@@ -25,7 +31,7 @@
 
 		var element = document.getElementById('deviceProperties');
 
-		element.innerHTML = 'デバイス名: '       + device.name     + '<br />' +                             'PhoneGap: '         + device.phonegap  + '<br />' +                            'プラットフォーム: ' + device.platform + '<br />' +                             'UUID: '             + device.uuid     + '<br />' +                             'バージョン: '       + device.version  + '<br />';
+		element.innerHTML = 'デバイス名: '       + device.name     + '<br />' +                             'PhoneGap: '         + device.phonegap  + '<br />' +                            'Cordova: '          + device.cordova  + '<br />' +                             'プラットフォーム: ' + device.platform + '<br />' +                             'UUID: '             + device.uuid     + '<br />' +                             'バージョン: '       + device.version  + '<br />';
 	}
 
 </script>
