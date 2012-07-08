@@ -29,9 +29,15 @@
 	function onDeviceReady() {
 		// PhoneGap APIを安全に使用できます。
 
-		var element = document.getElementById('deviceProperties');
+		var element = document.getElementById('msgArea');
 
 		element.innerHTML = 'デバイス名: '       + device.name     + '<br />' +                             'PhoneGap: '         + device.phonegap  + '<br />' +                            'Cordova: '          + device.cordova  + '<br />' +                             'プラットフォーム: ' + device.platform + '<br />' +                             'UUID: '             + device.uuid     + '<br />' +                             'バージョン: '       + device.version  + '<br />';
+	}
+
+	function Draw() {
+		var element = document.getElementById('msgArea2');
+
+		element.innerHTML = '(∵) ヒョコ';
 	}
 
 </script>
@@ -39,7 +45,15 @@
 </head>
 <body onload="onLoad()">
 
-<p id="deviceProperties">Loading device properties...</p>
+<input type="button" value="押さないほうがイイかも" onClick="Draw()" />
+<br />
+
+<div id="msgArea">
+デバイス情報見てまんのゃ...
+</div>
+
+<div id="msgArea2">
+</div>
 
 </body>
 </html>
