@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+ <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<title>DeviceInfo</title>
+
+<script type="text/javascript" charset="utf-8">
+
+	// PhoneGapの読み込み完了とともにonDeviceReadyを呼び出します。
+	//
+	// この時点ではドキュメントの読み込みは完了していますが、
+	// PhoneGapの読み込みはまだ完了していません。
+	// PhoneGapが読み込み完了とともに deviceready() イベントが呼び出されます。
+	//
+	function onLoad() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+
+	// PhoneGapの読み込みが完了したので、
+	// PhoneGapのメソッドを安全に呼び出すことができます。
+	//
+	function onDeviceReady() {
+		// PhoneGap APIを安全に使用できます。
+
+		var element = document.getElementById('deviceProperties');
+
+		element.innerHTML = 'デバイス名: '       + device.name     + '<br />' +                             'PhoneGap: '         + device.phonegap  + '<br />' +                            'プラットフォーム: ' + device.platform + '<br />' +                             'UUID: '             + device.uuid     + '<br />' +                             'バージョン: '       + device.version  + '<br />';
+	}
+
+</script>
+
+</head>
+<body onload="onLoad()">
+
+<p id="deviceProperties">Loading device properties...</p>
+
+</body>
+</html>
