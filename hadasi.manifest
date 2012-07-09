@@ -1,24 +1,24 @@
-CACHE MANIFEST
+ï»¿CACHE MANIFEST
 
 # Revision: 20120710-0800
 
 ############################################################
 
-## ƒLƒƒƒbƒVƒ…‘ÎÛ‚ÌƒRƒ“ƒeƒ“ƒc
+## ã‚­ãƒ£ãƒƒã‚·ãƒ¥å¯¾è±¡ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„
 CACHE:
 
 Images/004.jpg
-AndroidManifest.xml
+/AndroidManifest.xml
 
 ############################################################
 
-## •K‚¸ƒT[ƒo[‚ðŒ©‚éƒRƒ“ƒeƒ“ƒc
+## å¿…ãšã‚µãƒ¼ãƒãƒ¼ã‚’è¦‹ã‚‹ã‚³ãƒ³ãƒ†ãƒ³ãƒ„
 NETWORK:
 
-# ‘åŽG”c‚Éƒ‹[ƒg‚Ì”X
+# å¤§é›‘æŠŠã«ãƒ«ãƒ¼ãƒˆã®è«¸ã€…
 
 Images/004.jpg
-AndroidManifest.xml
+/AndroidManifest.xml
 
-# ŠO•”ƒŠƒ\[ƒX
+# å¤–éƒ¨ãƒªã‚½ãƒ¼ã‚¹
 
